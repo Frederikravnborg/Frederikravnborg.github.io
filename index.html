@@ -4,12 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Player</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .audio-file {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Audio Page</h1>
-    <audio controls>
-        <source src="clean/p226_001.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="container">
+        <div class="column">
+            <h2>Noisy</h2>
+            <div class="audio-file">
+                <p>File 1</p>
+                <audio controls>
+                    <source src="noisy/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>File 2</p>
+                <audio controls>
+                    <source src="noisy/p232_072.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- Add more audio files as needed -->
+        </div>
+        <div class="column">
+            <h2>Generated</h2>
+            <div class="audio-file">
+                <p>File 3</p>
+                <audio controls>
+                    <source src="noisy/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>File 4</p>
+                <audio controls>
+                    <source src="noisy/p232_072.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- Add more audio files as needed -->
+        </div>
+        <div class="column">
+            <h2>Real Clean</h2>
+            <div class="audio-file">
+                <p>File 5</p>
+                <audio controls>
+                    <source src="clean/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>File 6</p>
+                <audio controls>
+                    <source src="clean/p232_072.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- Add more audio files as needed -->
+        </div>
+    </div>
 </body>
 </html>
