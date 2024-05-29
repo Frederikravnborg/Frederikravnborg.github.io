@@ -8,6 +8,12 @@
         .container {
             display: flex;
             justify-content: space-between;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
         .column {
             flex: 1;
@@ -16,65 +22,498 @@
         .audio-file {
             margin-bottom: 20px;
         }
+        audio {
+            width: 100px; /* Adjust the width as needed */
+            height: 20px; /* Adjust the height as needed */
+        }
+        .centered-heading {
+            text-align: center;
+        }
+        .additional-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .additional-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .additional-image-container img {
+            max-width: 80%; /* Adjust the width as needed */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .additional-audio-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .additional-audio {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <h1>Bachelor Project - Deep Learning for Speech Enhancement - Audio Samples</h1>
+    <h2 class="centered-heading">Examples of speech enhancement on VCTKD by our models</h2>
     <div class="container">
         <div class="column">
-            <h2>Noisy</h2>
+            <h3>Noisy</h3>
             <div class="audio-file">
-                <p>File 1</p>
+                <p>p232_035</p>
                 <audio controls>
                     <source src="noisy/p232_035.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <div class="audio-file">
-                <p>File 2</p>
+                <p>p257_290</p>
                 <audio controls>
-                    <source src="noisy/p232_072.wav" type="audio/wav">
+                    <source src="noisy/p257_290.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <!-- Add more audio files as needed -->
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="noisy/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="noisy/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="noisy/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
         <div class="column">
-            <h2>Generated</h2>
+            <h3>Standard Model</h3>
             <div class="audio-file">
-                <p>File 3</p>
+                <p>p232_035</p>
                 <audio controls>
                     <source src="generated/p232_035.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <div class="audio-file">
-                <p>File 4</p>
+                <p>p257_290</p>
                 <audio controls>
-                    <source src="generated/p232_072.wav" type="audio/wav">
+                    <source src="generated/p257_290.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <!-- Add more audio files as needed -->
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="generated/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="generated/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="generated/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
         <div class="column">
-            <h2>Real Clean</h2>
+            <h3>Supervised Model</h3>
             <div class="audio-file">
-                <p>File 5</p>
+                <p>p232_035</p>
+                <audio controls>
+                    <source src="generated_supervised/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_290</p>
+                <audio controls>
+                    <source src="generated_supervised/p257_290.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="generated_supervised/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="generated_supervised/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="generated_supervised/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Real Clean</h3>
+            <div class="audio-file">
+                <p>p232_035</p>
                 <audio controls>
                     <source src="clean/p232_035.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <div class="audio-file">
-                <p>File 6</p>
+                <p>p257_290</p>
                 <audio controls>
-                    <source src="clean/p232_072.wav" type="audio/wav">
+                    <source src="clean/p257_290.wav" type="audio/wav">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-            <!-- Add more audio files as needed -->
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="clean/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="clean/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="clean/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
     </div>
+
+
+
+    <div class="additional-content">
+        <div class="additional-image-container">
+            <h3>Report Supplement 1</h3>
+            Spectrograms and waveforms of a selected noisy file, the corresponding
+generated fake clean generated by our standard model, and real clean version,
+which only contains speech.
+            <img src="images/noisy_fake_clean_waveforms_mel_spectrogram.png" alt="Waveform and Spectrogram">
+        </div>
+        <div class="additional-audio-container">
+            <div class="additional-audio">
+                <p>Noisy</p>
+                <audio controls>
+                    <source src="additional_audio1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Generated Fake Clean</p>
+                <audio controls>
+                    <source src="additional_audio2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Real Clean</p>
+                <audio controls>
+                    <source src="additional_audio3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="additional-content">
+        <div class="additional-image-container">
+            <h3>Report Supplement 2</h3>
+            Spectrogram of the generated mask (middle) produced by the standard
+model, compared to the original noisy input (left) and the output of the generator
+(right). The output is the result of an element-wise multiplication of the noisy
+input and the generated mask.
+            <img src="images/standardmodel1000_mask.png" alt="Waveform and Spectrogram">
+        </div>
+        <div class="additional-audio-container">
+            <div class="additional-audio">
+                <p>Noisy</p>
+                <audio controls>
+                    <source src="additional_audio1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Generated Fake Clean</p>
+                <audio controls>
+                    <source src="additional_audio2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Real Clean</p>
+                <audio controls>
+                    <source src="additional_audio3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="additional-content">
+        <div class="additional-image-container">
+            <h3>Report Supplement 3</h3>
+            Guided backpropagation for the discriminator (a) and the generator
+(b).
+
+            <img src="images/gbp.png" alt="Waveform and Spectrogram">
+        </div>
+        <div class="additional-audio-container">
+            <div class="additional-audio">
+                <p>Noisy</p>
+                <audio controls>
+                    <source src="additional_audio1.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Generated Fake Clean</p>
+                <audio controls>
+                    <source src="additional_audio2.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Real Clean</p>
+                <audio controls>
+                    <source src="additional_audio3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="additional-content">
+        <div class="additional-image-container">
+            <h3>Report Supplement 4</h3>
+            Comparison between generated spectrograms of the standard model
+            (top) and the supervised model (bottom). For each model, we display the noisy
+            input, the generated mask, the outputted Hadamard product between the input
+            and the mask, and the real clean spectrogram.
+            <img src="images/supervised_spec.png" alt="Waveform and Spectrogram">
+        </div>
+        <div class="additional-audio-container">
+            <div class="additional-audio">
+                <p>Noisy</p>
+                <audio controls>
+                    <source src="noisy/imgp257_112.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Fake Clean (Standard)</p>
+                <audio controls>
+                    <source src="generated/imgp257_112.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Fake Clean (Supervised)</p>
+                <audio controls>
+                    <source src="generated_supervised/imgp257_112.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="additional-audio">
+                <p>Real Clean</p>
+                <audio controls>
+                    <source src="clean/imgp257_112.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="centered-heading">Examples of AudioSet data</h2>
+    <div class="container">
+        <div class="column">
+            <h3>Noisy</h3>
+            <div class="audio-file">
+                <p>p232_035</p>
+                <audio controls>
+                    <source src="noisy/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_290</p>
+                <audio controls>
+                    <source src="noisy/p257_290.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="noisy/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="noisy/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="noisy/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Standard Model</h3>
+            <div class="audio-file">
+                <p>p232_035</p>
+                <audio controls>
+                    <source src="generated/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_290</p>
+                <audio controls>
+                    <source src="generated/p257_290.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="generated/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="generated/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="generated/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Supervised Model</h3>
+            <div class="audio-file">
+                <p>p232_035</p>
+                <audio controls>
+                    <source src="generated_supervised/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_290</p>
+                <audio controls>
+                    <source src="generated_supervised/p257_290.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="generated_supervised/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="generated_supervised/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="generated_supervised/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Real Clean</h3>
+            <div class="audio-file">
+                <p>p232_035</p>
+                <audio controls>
+                    <source src="clean/p232_035.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_290</p>
+                <audio controls>
+                    <source src="clean/p257_290.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_295</p>
+                <audio controls>
+                    <source src="clean/p232_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p257_295</p>
+                <audio controls>
+                    <source src="clean/p257_295.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="audio-file">
+                <p>p232_283</p>
+                <audio controls>
+                    <source src="clean/p232_283.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
